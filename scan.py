@@ -1,11 +1,14 @@
 import requests
 import json
 
-r = requests.get('https://api.raydium.io/v2/ammV3/ammPools')
-body = r.json()
+# get response from raydium
+response = requests.get('https://api.raydium.io/v2/ammV3/ammPools')
+body = response.json()
 
+# parse data
 data = body['data'][0]
 
+# extract id and corresponding fields
 id = data['id']
 mintProgramIdA = data['mintProgramIdA']
 
