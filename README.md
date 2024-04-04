@@ -1,5 +1,7 @@
 Scanner for those with dreams!
 
+https://api.raydium.io/v2/ammV3/ammPools
+
 {
 data:[
 {
